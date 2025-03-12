@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack's Personal Website</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="vanta-bg"></div>
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="#home">Jack Yerkes</a>
+        </div>
+        <div class="nav-right">
+            <a href="#about-me">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="docs/Jack_Yerkes_Resume.pdf" target="_blank">Resume</a>
+        </div>
+    </div>
+
+    <section id="home" class="section home">
+        <div class="typewriter-container">
+            <h1 style="font-size: 6em;">Hi, I'm Jack!</h1>
+            <h1 style="font-size: 2em;">Software Engineer.</h1>
+            <h1 style="font-size: 2em;">Student at the University of Michigan.</h1>
+            <h1 style="font-size: 2em;">Creator. Developer. Problem Solver.</h1>
+            <div class="buttons-container">
+                <button class="btn" id="learnMoreBtn">Learn More About Me</button>
+                <a href="projects.html" class="btn">Check Out My Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-me" class="section about-me">
+        <div class="about-me-box">
+            <h1>About Me</h1>
+            <p>
+                Hi, I’m <strong>Jack</strong>! I’m a senior at the <strong>University of Michigan</strong> 
+                studying computer science with a strong interest in 
+                <strong> technology and finance</strong>,
+                <strong>web development</strong>, <strong>conversational AI</strong>, and 
+                <strong>product management</strong>. I thrive on tackling complex problems 
+                and developing innovative software solutions that make an impact.
+            </p>
+            <p>
+                Beyond computer science, you’ll often find me at the gym, spending time 
+                with family and friends, or exploring new places around the world.
+            </p>
+            <p>
+                I’m always excited to collaborate on new projects, learn from others, and 
+                push the boundaries of technology. <a href="mailto:your.email@example.com">Let’s connect!</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Jack Yerkes. All rights reserved.
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+    <script>
+    VANTA.TOPOLOGY({
+    el: "#vanta-bg",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    backgroundColor: 0x0a192f, // Dark background color
+    color: 0x44b689 // Line color
+    });
+    </script>
+</body>
+</html>

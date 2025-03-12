@@ -1,0 +1,113 @@
+/* Navbar Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    /* Changed to a dark gray for readability */
+    background-color: #0a192f;
+    /* Light background for a clean look */
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Make sure the body stretches to the full height of the viewport */
+    margin: 0;
+}
+
+/* Main content area that grows and takes available space */
+main {
+    flex: 1;
+    /* Pushes the footer to the bottom if there's not enough content */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    /* White background for contrast */
+    /* Subtle border for separation */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    /* Light blue for links */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.nav-left a {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #44b689;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.contact-image {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-image img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.contact-info a:hover {
+    color: #66ffc2;
+    transition: color 0.3s ease;
+}
+
