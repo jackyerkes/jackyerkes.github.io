@@ -9,21 +9,17 @@
 body {
     font-family: Arial, sans-serif;
     color: white;
-    /* Changed to a dark gray for readability */
     background-color: #0a192f;
-    /* Light background for a clean look */
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* Make sure the body stretches to the full height of the viewport */
     margin: 0;
 }
 
 /* Main content area that grows and takes available space */
 main {
     flex: 1;
-    /* Pushes the footer to the bottom if there's not enough content */
 }
 
 /* Footer styles */
@@ -39,8 +35,6 @@ footer {
     align-items: center;
     padding: 10px 20px;
     background-color: transparent;
-    /* White background for contrast */
-    /* Subtle border for separation */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -48,7 +42,6 @@ footer {
 
 .navbar a {
     color: white;
-    /* Light blue for links */
     text-decoration: none;
     margin: 0 10px;
     font-size: 16px;
